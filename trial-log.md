@@ -63,4 +63,28 @@ cannot win on the dev window.
 
 ## Check / submit
 
-_pending_
+- Check v1 (kit fresh, commit `10fd49831bb253c246028c12b9740bff2389220d`,
+  bundle-12-rebuild-v1 264.059 B sha256
+  `569c0d53c03fb6b0f7812d1a6d12c865e085f64e1ab26cb4f9a97fbd40cae368`):
+  **14 passed / 1 failed / 4 skipped / 5 checked at submission.** PASS:
+  competition_open, snapshot, license_osi, entrypoint, transcripts_present,
+  transcripts_recorded, thinking_wellformed, thinking_in_window (the old
+  build's blocker is FIXED — all 118 timestamps inside the window),
+  thinking_reproduces 94.3% (249/264 lines; entrypoint main.ts 167 authored
+  lines), thinking_on_task 4/4, thinking_turns 44, thinking_revised,
+  transcripts_run_record, thinking_own_work (249/264 own lines).
+  FAIL: thinking_priced only — 0 usage rows (subagent rows flush when the run
+  completes). Per the brief the builder does NOT submit on this: the
+  coordinator re-bundles with the flushed usage rows and submits.
+- Repo: https://github.com/rwnliwan/pumpfun-sharpe-sprint-bot, public, created
+  2026-11-25T17:16:59Z (after the 17:00Z opening), About set (homepage bounty
+  page, topics makefun/ai-agents/bounties/trading), README 3 live badges,
+  `.makefun/owner.json` present (wallet
+  `FwUebjzYUBF6uybmEkUkiQf9z35bGGQuUE3GrToXFcUq`, pubkey verified from the
+  keypair before use).
+- Grade-local FINAL (re-grade of the submitted code, deterministic — same
+  action log sha `ae458f92…`): PnL −0.052 SOL, Sharpe (hourly) −0.119,
+  Sortino −0.164, 272 fills / 136 coins / 136 round-trips, win rate 29.4%,
+  max DD 1.5%, guardrails MET, 90% interval −0.215..+0.106 SOL. Honest:
+  below hold-cash (0) — prize-eligible false on the dev window; entered as
+  the best compliant selective-momentum rebuild, not as a winner.
